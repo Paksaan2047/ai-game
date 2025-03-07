@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI文字冒险</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="story-text"></div>
+        <div id="choices"></div>
+        <input type="text" id="custom-input" placeholder="输入你的行动...">
+        <div class="status">
+            <div id="inventory">物品：无</div>
+            <div id="relationships">NPC关系：中立</div>
+        </div>
+        <button onclick="saveGame()">保存进度</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+<div id="world-setting">
+    <input type="text" id="world-theme" placeholder="世界观主题">
+    <button onclick="applySetting()">应用设定</button>
+</div>
